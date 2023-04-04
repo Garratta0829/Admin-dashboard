@@ -20,11 +20,15 @@ body {
     height: 100vh;
 }
 
+.toolbar-header {
+    display: flex;
+    
+}
+
 .toolbar-logo {
     height: 20px;
     width: 20px;
     color: white;
-    background-color: white;
 }
 
 
@@ -34,8 +38,16 @@ body {
 
 .toolbar-item {
     display: flex;
-    margin: 10px;
+    margin: 10px 10px 10px 20px;
     
+}
+
+.toolbar-list-logo {
+    margin-right: 10px;
+}
+
+.toolbar-item-title {
+    font-size: 1.2rem;
 }
 
 .right {
@@ -46,21 +58,61 @@ body {
     display: flex;
     flex-direction: column;
     height: 180px;
+    box-shadow: 4px 4px 3px grey;
 }
 
 .right-header-top {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: 20px;
+}
+
+.right-header-top-left {
+    display: flex;
+    align-items: center;
+}
+
+.right-header-top-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
 }
 
 .search {
-    width: 400px;
-    border-radius: 10px;
-    background-color: rgb(237, 240, 245);
+    width: 450px;
+    border-radius: 25px;
+    background-color: rgb(216, 226, 241);
     border: none;
-    padding: 4px;
+    padding: 6px;
 
+
+}
+
+.search-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.header-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.header-profile {
+    width: 40px;
+    height: 40px;
+}
+
+.header-top-right-name {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .right-header-bottom {
@@ -68,6 +120,27 @@ body {
     justify-content: space-between;
     align-items: flex-end;
 
+}
+
+.right-header-bottom-left {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.right-header-bottom-left-name {
+    margin-left: 20px;
+}
+
+.hi-there {
+    font-size: .6rem;
+    font-weight: 600;
+    /* margin: 0px; */
+}
+
+.name {
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .right-header-bottom-right {
@@ -97,7 +170,7 @@ body {
     /* width: 75vw; */
     width: 100%;
     margin: 0px;
-    background-color: rgb(237, 240, 245);
+    background-color: rgb(227, 232, 241);
 
 }
 
@@ -166,7 +239,7 @@ body {
 }
 
 .card-icons {
-    width: 130px;
+    width: 100px;
     align-self: end;
     margin-right: 18px;
     margin-bottom: 18px;
@@ -195,7 +268,7 @@ body {
     align-items: center;
     /* min-width: 200px; */
     width: 90%;
-    height: 220px;
+    height: 250px;
     background-color: white;
     /* margin-left: 30px; */
     /* margin-top: 20px; */
@@ -227,7 +300,7 @@ body {
 }
 
 .label {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     /* margin-bottom: 20px; */
     font-size: 1.3rem;
     font-weight: 700;
@@ -240,7 +313,7 @@ body {
     align-items: center;
     /* min-width: 200px; */
     width: 90%;
-    height: 220px;
+    height: 250px;
     background-color: white;
     /* margin-left: 30px; */
     /* margin-top: 20px; */
