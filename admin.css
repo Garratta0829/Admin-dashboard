@@ -18,6 +18,7 @@ body {
     color: white;
     width: 25vw;
     height: 100vh;
+    /* position: fixed; */
 }
 
 .toolbar-header {
@@ -80,6 +81,8 @@ body {
     flex-direction: column;
     height: 180px;
     box-shadow: 4px 4px 3px grey;
+    /* width: 75vw; */
+    /* position: fixed; */
 }
 
 .right-header-top {
@@ -227,6 +230,22 @@ body {
     width: 92%;
     height: 95%;
     /* margin-left: 30px; */
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 6);
+        height: auto;
+    }
+
+    .toolbar {
+        position: sticky;
+    }
+
+
+
 }
 
 .card {
